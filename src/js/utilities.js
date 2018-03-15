@@ -10,8 +10,6 @@ function showPicture(titleString, picFile) {
     $("#imgDisplayModal").find(".modal-title").text(titleString);
     const txt = `<img src=${picFile} class="img-fluid" alt="Responsive Image">`;
     const body = $("#imgDisplayModal").find(".modal-body");
-    console.log(txt);
-    console.log(body);
     body.html(txt);
     $("#imgDisplayModal").modal()
 };

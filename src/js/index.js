@@ -18,7 +18,7 @@ $(document).ready(function ($) {
 
     $('#modalTest').click(function () {
         //showPicture("ECG", "normalECG.jpg");
-        showPicture("ECG", "fastAFVoltageAndStrain.jpg");
+        showPicture("ECG", "fastAFVoltageAndStrain.jpg")
     });
 
 })
