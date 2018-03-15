@@ -6,14 +6,14 @@ function playSound(soundFile) {
 }
 
 function showPicture(titleString, picFile) {
-    console.log('showPicture');
-    $("#exampleModal").find(".modal-title").text(titleString);
+    console.log('showPicture', picFile);
+    $("#imgDisplayModal").find(".modal-title").text(titleString);
     const txt = `<img src=${picFile} class="img-fluid" alt="Responsive Image">`;
-    const body = $("#exampleModal").find(".modal-body");
+    const body = $("#imgDisplayModal").find(".modal-body");
     console.log(txt);
     console.log(body);
     body.html(txt);
-    $("#exampleModal").modal()
+    $("#imgDisplayModal").modal()
 };
 
 export { playSound, showPicture }

@@ -17,7 +17,8 @@ $(document).ready(function ($) {
     });
 
     $('#modalTest').click(function () {
-        showPicture("Testing Image Display", "horseshoe.jpg");
+        //showPicture("ECG", "normalECG.jpg");
+        showPicture("ECG", "fastAFVoltageAndStrain.jpg");
     });
 
 })
