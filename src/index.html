@@ -15,6 +15,26 @@
 </head>
 
 <body>
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <h2>testing ES6 + Babel</h2>
     <b>Name test :</b>
     <span id="nameSpan"></span>
@@ -54,6 +74,9 @@
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
                 aria-controls="collapseExample" , id="soundTest">
                 Button with data-target
+            </button>
+            <button class="btn btn-primary" type="button" id="modalTest">
+                Button with modal-target
             </button>
         </p>
         <div class="collapse" id="collapseExample">

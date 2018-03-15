@@ -40,6 +40,11 @@ gulp.task('moveImages', function () {
         .pipe(gulp.dest("./build"));
 })
 
+gulp.task('moveSounds', function () {
+    return gulp.src(['./src/assets/*.mp3'])
+        .pipe(gulp.dest("./build"));
+})
+
 gulp.task("build", function () {
     return browserify({
         entries: ["./src/js/index.js"]
@@ -67,7 +72,7 @@ gulp.task('serve', ['sass'], function () {
 
 });
 
-gulp.task('default', ['moveHTML', 'moveJS', 'moveImages', 'build', 'serve']);
+gulp.task('default', ['moveHTML', 'moveJS', 'moveImages', 'moveSounds', 'build', 'serve']);
 
 
 
