@@ -15,6 +15,10 @@
 
 
 <body>
+    <!-- 
+        THE IMAGE DISPLAY MODAL
+    -->
+
     <div class="modal" tabindex="-1" role="dialog" id="imgDisplayModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -28,19 +32,39 @@
                     <p>Modal body text goes here.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- 
+        THE USER LOGIN MODAL
+    -->
+    <div class="modal" tabindex="-1" role="dialog" id="userLoginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Please enter your user ID</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="target">
+                        <!-- action="destination.html"> -->
+                        <input id="userID" type="text" value="">
+                        <input type="submit" value="Go">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- THIS IS THE TEST AREA WHERE WE HAVE EXPLORED BOOTSTRAP 4
     <div class="container">
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="UMlogo.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> umSIM
-            </a>
-        </nav>
         <h2>testing ES6 + Babel</h2>
         <b>Name test :</b>
         <span id="nameSpan"></span>
@@ -78,10 +102,10 @@
                 </a>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
                     aria-controls="collapseExample" , id="soundTest">
-                    Button with data-target
+                    Play sound
                 </button>
                 <button class="btn btn-primary" type="button" id="modalTest">
-                    Button with modal-target
+                    Display image
                 </button>
             </p>
             <div class="collapse" id="collapseExample">
@@ -137,11 +161,22 @@
         </div>
 
     </div>
+-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4">muSIM</h1>
+            </div>
+            <div class="col text-right">
+                <h1 id="timerDisplay" class="display-4">timer</h1>
+            </div>
+        </div>
+    </div>
 
-    <script src="jquery.min.js"></script>
-    <script src="popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="bundle.js"></script>
+    <script src=" jquery.min.js "></script>
+    <script src="popper.min.js "></script>
+    <script src="bootstrap.min.js "></script>
+    <script src="bundle.js "></script>
 
 </body>
 

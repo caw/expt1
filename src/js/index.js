@@ -1,12 +1,32 @@
 import { Person, adder, mult } from "./person";
-import { playSound, showPicture } from "./utilities";
+import { playSound, showPicture, loginUser } from "./utilities";
 
 //import jQuery from 'jQuery'; ** THIS IS BLACK MAGIC 
 import { Howl, Howler } from 'howler';
 
-
-
 $(document).ready(function ($) {
+    loginUser();
+    /*  startSim();
+     logResults();
+     signOff(); */
+})
+
+
+const startSim = function () {
+
+    console.log('startSim')
+}
+
+const logResults = function () {
+    alert('log results');
+}
+
+const signOff = function () {
+    alert('signOff');
+}
+
+
+/* $(document).ready(function ($) {
     let person = new Person("Ram", "Kulkarni");
     let t = adder(1, 1).toString();
     $("#nameSpan").text(t);
@@ -21,4 +41,6 @@ $(document).ready(function ($) {
         showPicture("ECG", "fastAFVoltageAndStrain.jpg")
     });
 
-})
+
+
+}) */

@@ -14,4 +14,13 @@ function showPicture(titleString, picFile) {
     $("#imgDisplayModal").modal()
 };
 
-export { playSound, showPicture }
+function loginUser() {
+    $("#target").submit(function (event) {
+        console.log($("#userID").val())
+        // event.preventDefault();
+        $("#userLoginModal").modal('hide');
+    });
+    $("#userLoginModal").modal();
+};
+
+export { playSound, showPicture, loginUser }
