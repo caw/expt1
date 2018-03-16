@@ -1,3 +1,5 @@
+let userID = 0;
+
 function playSound(soundFile) {
     const sound = new Howl({
         src: [soundFile]
@@ -16,11 +18,16 @@ function showPicture(titleString, picFile) {
 
 function loginUser() {
     $("#target").submit(function (event) {
-        console.log($("#userID").val())
-        // event.preventDefault();
+        userID = $("#userID").val();
         $("#userLoginModal").modal('hide');
+        console.log(userID);
     });
     $("#userLoginModal").modal();
+    return 1;
 };
 
-export { playSound, showPicture, loginUser }
+function loadSim(simNumber) {
+    console.log(simNumber);
+};
+
+export { playSound, showPicture, loginUser, loadSim }

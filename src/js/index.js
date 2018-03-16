@@ -1,19 +1,25 @@
 import { Person, adder, mult } from "./person";
-import { playSound, showPicture, loginUser } from "./utilities";
+import { playSound, showPicture, loginUser, loadSim } from "./utilities";
+import { normalSim, postOpConfusion } from "./simData"
 
-//import jQuery from 'jQuery'; ** THIS IS BLACK MAGIC 
 import { Howl, Howler } from 'howler';
 
 $(document).ready(function ($) {
-    loginUser();
-    /*  startSim();
-     logResults();
-     signOff(); */
+    // login the user and load the correct sim
+    let simNumber = loginUser();
+    $("#userLoginModal").on('hidden.bs.modal', function (e) {
+        if (simNumber > 0) {
+            loadSim(simNumber)
+            startSim();
+            logResults();
+            signOff();
+        } else {
+            console.log('not recognised');
+        }
+    });
 })
 
-
 const startSim = function () {
-
     console.log('startSim')
 }
 
